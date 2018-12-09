@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $defaultFontColor;
+    font-size: $defaultFontSize;
+    font-family: $defaultFontFamily;
+    background: white;
+    @include desktop {
+        background: $neutralLight;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fancyFontFamily;
+    font-weight: 600;
+    margin: 0px 0 10px 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:link {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px 0 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    position: relative;
+}
+
+label {
+    text-align: left;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px; // margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    text-shadow: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: $secondary;
+}
+
+button:hover {
+    background: $secondaryHover;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid $neutralLight;
+    text-align: left;
+    padding: 8px;
+}
+
+td .capitalise,
+th .capitalise {
+    text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+    background-color: $tableStripe;
+}
+
+.capitalise,
+.capitalize {
+    text-transform: capitalize;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+#overlay {
+    background: black;
+    opacity: .6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.card {
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 #cbcbcb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $neutralDark;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 100px;
+}
+
+.btnCashback {
+    background: $cashback;
+}
+
+.btnCashback:hover {
+    background: $cashbackHover
+}
+
+.btnNoCashback {
+    background: $noCashback;
+}
+
+.btnNoCashback:hover {
+    background: $noCashbackHover;
+}
+
+.btnPrimary {
+    background: $primary;
+}
+
+.btnPrimary:hover {
+    background: $primaryHover
+}
+
+.primary {
+    color: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.terciary {
+    color: $terciary;
+}
+
+.warning {
+    color: $warning;
+}
+
+.warning-bg {
+    background: $warningLight;
+}
+
+.input-button {
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=number] {
+        width: 86%;
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+        font-size: 14px;
+    }
+    button {
+        width: 14%;
+        border-radius: 0;
+        font-size: 14px;
+        border-radius: 0 4px 4px 0; // border: 1px solid $neutralDark;
+        border: 1px solid $secondary;
+        border-left: none;
+    }
+    @include tabletPortrait {
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=number] {
+            width: 94%;
+        }
+        button {
+            width: 6%;
+        }
+    }
+    @include desktop {
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=number] {
+            width: 80%;
+        }
+        button {
+            width: 20%;
+        }
+    }
+}
+
+.input-group {
+    flex: 1;
+}
+
+.mr {
+    margin-right: 0;
+    @include desktop {
+        margin-right: $defaultMarginSize;
+    }
+}
+
+.mb {
+    margin-bottom: $defaultMarginSize;
+}
+
+.mobile-only {
+    display: block;
+    @include desktop {
+        display: none;
+    }
+}
