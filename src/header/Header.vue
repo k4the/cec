@@ -28,13 +28,12 @@ export default {
   flex-direction: column;
   align-items: normal;
   background: white;
-  padding: 0;
+  padding: $defaultPaddingSize $defaultPaddingSize 0 $defaultPaddingSize;
 
   @include desktop {
     flex-direction: row;
     align-items: center;
     background: $secondaryLight;
-    padding: 0 $defaultPaddingSize;
   }
 
   .logo {

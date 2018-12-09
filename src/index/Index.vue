@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <h1>Index</h1>
   </div>
 </template>
@@ -12,3 +12,8 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.index {
+  padding: $defaultPaddingSize;
+}
+</style>

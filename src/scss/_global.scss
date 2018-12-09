@@ -7,6 +7,8 @@ body {
     font-size: $defaultFontSize;
     font-family: $defaultFontFamily;
     background: white;
+    margin: 0;
+    padding: 0;
     @include desktop {
         background: $neutralLight;
     }
@@ -20,6 +22,7 @@ h5 {
     font-family: $fancyFontFamily;
     font-weight: 600;
     margin: 0px 0 10px 0;
+    color: $secondary;
 }
 
 a,
@@ -45,6 +48,7 @@ form {
 
 label {
     text-align: left;
+    color: $primary;
 }
 
 input[type=text],
@@ -86,7 +90,7 @@ table {
 
 td,
 th {
-    border: 1px solid $neutralLight;
+    border: 1px solid $neutral;
     text-align: left;
     padding: 8px;
 }
@@ -97,7 +101,7 @@ th .capitalise {
 }
 
 tr:nth-child(even) {
-    background-color: $tableStripe;
+    background-color: $neutralLight;
 }
 
 .capitalise,
@@ -126,7 +130,7 @@ tr:nth-child(even) {
     box-shadow: 0 2px 5px 0 #cbcbcb;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid $neutralDark;
+    border: 1px solid $neutral;
     margin-bottom: 15px;
     position: relative;
     min-height: 100px;
@@ -190,7 +194,7 @@ tr:nth-child(even) {
         width: 14%;
         border-radius: 0;
         font-size: 14px;
-        border-radius: 0 4px 4px 0; // border: 1px solid $neutralDark;
+        border-radius: 0 4px 4px 0;
         border: 1px solid $secondary;
         border-left: none;
     }

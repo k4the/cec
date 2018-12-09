@@ -55,7 +55,6 @@ export default {
   #loginButton {
     width: auto;
     float: none;
-    margin-bottom: $defaultMarginSize;
   }
 
   @include desktop {
@@ -67,7 +66,6 @@ export default {
     #loginButton {
       width: auto;
       float: right;
-      margin-bottom: 0;
     }
   }
 }
