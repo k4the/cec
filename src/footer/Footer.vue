@@ -30,6 +30,7 @@ export default {
   .footer-link {
     padding: 0 $defaultPaddingSize;
     color: $neutralDark;
+    font-size: smaller;
     display: block;
 
     .inline {

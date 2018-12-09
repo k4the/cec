@@ -3,7 +3,7 @@
     <div class="logo mr mb">
       <img src="../assets/cec-logo.png" alt="Cheap Energy Club">
     </div>
-    <h3 class="mr primary">Already joined? Login</h3>
+    <h4 class="mr primary">Already joined? Login</h4>
     <div class="login-header">
       <Login/>
     </div>
