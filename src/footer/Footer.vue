@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer>
     <nav>
       <a class="footer-link inline">Privacy policy</a>
       <a class="footer-link inline">Terms &amp; conditions</a>
@@ -9,7 +9,7 @@
       <a class="footer-link">A tool from MoneySavingExpert.com</a>
       <a class="footer-link">Technology Experts MSM</a>
     </nav>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -21,14 +21,14 @@ export default {
 };
 </script>
 <style lang="scss">
-.footer {
+footer {
   nav {
     margin: 0 auto;
     display: block;
   }
 
   .footer-link {
-    padding: 0 $defaultPaddingSize;
+    padding: 0 $defaultPaddingVertical;
     color: $neutralDark;
     font-size: smaller;
     display: block;

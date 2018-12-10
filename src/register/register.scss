@@ -1,0 +1,40 @@
+.register {
+    padding: $defaultPaddingVertical $defaultPaddingHorizontal;
+    display: flex;
+    flex-direction: column;
+  
+    form {
+      flex: 1;
+      padding-right: 0;
+    }
+  
+    .sidebar {
+      min-height: 200px;
+      background: $secondaryLight;
+      display: none;
+  
+      h1 {
+          background: white;
+          padding-bottom: $defaultPaddingVertical;
+      }
+    }
+  
+    .sub-title {
+      background: $secondaryLight;
+      border-left: 2px solid $secondary;
+      padding: $defaultPaddingVertical $defaultPaddingHorizontal;
+    }
+  
+    @include desktop {
+      flex-direction: row;
+      form {
+        flex: 2;
+        padding-right: $defaultPaddingHorizontal;
+      }
+  
+      .sidebar {
+        display: block;
+        flex: 1;
+      }
+    }
+  }

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <header>
     <div class="logo mr mb">
       <img src="../assets/cec-logo.png" alt="Cheap Energy Club">
     </div>
@@ -7,7 +7,7 @@
     <div class="login-header">
       <Login/>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -23,12 +23,12 @@ export default {
 };
 </script>
 <style lang="scss">
-.header {
+header {
   display: flex;
   flex-direction: column;
   align-items: normal;
   background: white;
-  padding: $defaultPaddingSize $defaultPaddingSize 0 $defaultPaddingSize;
+  padding: $defaultPaddingVertical $defaultPaddingVertical 0 $defaultPaddingVertical;
 
   @include desktop {
     flex-direction: row;

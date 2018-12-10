@@ -2,7 +2,9 @@
   <div id="app" class="container">
     <div class="header-main-wrapper">
       <Header/>
-      <router-view class="main"/>
+      <div class="main">
+        <router-view/>
+      </div>
     </div>
     <Footer/>
   </div>
@@ -37,10 +39,10 @@ export default {
     min-height: 200px;
   }
 
-  .footer {
+  footer {
     height: auto;
     background: $secondaryLight;
-    padding: $defaultPaddingSize;
+    padding: $defaultPaddingVertical;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -52,7 +54,7 @@ export default {
       padding-bottom: 4.5rem;
     }
 
-    .footer {
+    footer {
       height: 4.5rem;
     }
   }
