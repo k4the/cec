@@ -199,8 +199,9 @@ tr:nth-child(even) {
         border-radius: 0;
         font-size: 14px;
         border-radius: 0 4px 4px 0;
-        border: 1px solid $secondary;
-        border-left: none;
+        // border: 1px solid $secondary;
+        // border-left: none;
+        border: none;
     }
     @include tabletPortrait {
         input[type=text],
