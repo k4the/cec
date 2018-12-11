@@ -28,6 +28,6 @@ export default {
 </script>
 <style lang="scss">
 .index {
-  padding: $defaultPaddingVertical $defaultPaddingHorizontal;
+  padding: $defaultSize $defaultSizeBig;
 }
 </style>

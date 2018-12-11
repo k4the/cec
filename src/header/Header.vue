@@ -28,7 +28,7 @@ header {
   flex-direction: column;
   align-items: normal;
   background: white;
-  padding: $defaultPaddingVertical $defaultPaddingVertical 0 $defaultPaddingVertical;
+  padding: $defaultSize $defaultSize 0 $defaultSize;
 
   @include desktop {
     flex-direction: row;

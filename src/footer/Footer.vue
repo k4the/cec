@@ -28,7 +28,7 @@ footer {
   }
 
   .footer-link {
-    padding: 0 $defaultPaddingVertical;
+    padding: 0 $defaultSize;
     color: $neutralDark;
     font-size: smaller;
     display: block;

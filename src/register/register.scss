@@ -1,11 +1,28 @@
 .register {
-    padding: $defaultPaddingVertical $defaultPaddingHorizontal;
+    padding: $defaultSize $defaultSizeBig;
     display: flex;
     flex-direction: column;
   
     form {
       flex: 1;
       padding-right: 0;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $defaultSizeBig;
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+          margin-right: 0;
+          flex: 1;
+          margin-bottom: $defaultSizeBig;
+        }
+        button {
+          flex: 1;
+        }
+      }
     }
   
     .sidebar {
@@ -15,21 +32,38 @@
   
       h2 {
           background: white;
-          padding-bottom: $defaultPaddingVertical;
       }
     }
   
-    .sub-title {
+    .message {
       background: $secondaryLight;
       border-left: 2px solid $secondary;
-      padding: $defaultPaddingVertical $defaultPaddingHorizontal;
+      padding: $defaultSize $defaultSizeBig;
+      margin-bottom: $defaultSizeBig;
+    }
+
+    .message.plain {
+      background: $terciaryLight;
+      border-left: none;
     }
   
     @include desktop {
       flex-direction: row;
       form {
         flex: 2;
-        padding-right: $defaultPaddingHorizontal;
+        padding-right: $defaultSizeBig;
+
+        .form-group {
+          flex-direction: row;
+
+          input[type=text],
+          input[type=email],
+          input[type=password] {
+            margin-right: $defaultSizeBig;
+            flex: 2;
+            margin-bottom: 0;
+          }
+        }
       }
   
       .sidebar {

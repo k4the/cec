@@ -49,7 +49,7 @@ export default {
   justify-content: space-between;
 
   .input-group {
-    margin-bottom: $defaultMarginSize;
+    margin-bottom: $defaultSize;
   }
 
   #loginButton {

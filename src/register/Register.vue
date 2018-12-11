@@ -2,9 +2,15 @@
   <div class="register">
     <form>
       <h1>Let's get you onto the cheapest deal</h1>
-      <SubTitle v-bind:sub-title="this.subTitles.currentSupply"/>
-      <SubTitle v-bind:sub-title="this.subTitles.energySupplier"/>
-      <SubTitle v-bind:sub-title="this.subTitles.tellUs"/>
+      <Message v-bind:message="this.texts.currentSupply"/>
+      <label for="postcode">Postcode</label>
+      <div class="form-group">
+        <input type="text" name="postode" />
+        <button type="button">Find Address</button>
+      </div>
+      <Message v-bind:message="this.texts.energySupplier"/>
+      <Message v-bind:message="this.texts.tellUs"/>
+      <Message v-bind:message="this.texts.addressFirst" v-bind:message-class="'plain'"/>
     </form>
     <div class="sidebar">
         <h2>How it works</h2>
@@ -14,16 +20,16 @@
 
 <script>
 import './register.scss';
-import * as subTitles from './data';
-import SubTitle from "@/register/SubTitle";
+import * as texts from './data';
+import Message from "@/register/Message";
 export default {
   name: "Register",
   components: {
-    SubTitle
+    Message
   },
   data() {
     return {
-      subTitles: subTitles.data
+      texts: texts.data
     };
   }
 };

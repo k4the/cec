@@ -42,7 +42,7 @@ export default {
   footer {
     height: auto;
     background: $secondaryLight;
-    padding: $defaultPaddingVertical;
+    padding: $defaultSize;
     text-align: center;
     position: absolute;
     bottom: 0;
