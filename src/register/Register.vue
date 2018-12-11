@@ -1,7 +1,8 @@
 <template>
   <div class="register">
-    <form>
+    <form @submit.prevent="addEditUser">
       <h1>Let's get you onto the cheapest deal</h1>
+      <CecSelect />
       <Message v-bind:message="this.texts.currentSupply"/>
       <label for="postcode">Postcode</label>
       <div class="form-group">
@@ -22,15 +23,22 @@
 import './register.scss';
 import * as texts from './data';
 import Message from "@/register/Message";
+import CecSelect from "@/shared/cecSelect/CecSelect";
 export default {
   name: "Register",
   components: {
-    Message
+    Message,
+    CecSelect
   },
   data() {
     return {
       texts: texts.data
     };
+  },
+  methods: {
+    addEditUser() {
+      console.log('addEditUser');
+    }
   }
 };
 </script>

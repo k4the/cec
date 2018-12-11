@@ -10,6 +10,7 @@
   </div>
 </template>
 <script>
+import './app.scss';
 import Header from "@/header/Header";
 import Footer from "@/footer/Footer";
 export default {
@@ -21,42 +22,4 @@ export default {
 };
 </script>
 <style lang="scss">
-.container {
-  max-width: 990px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  min-height: 100vh;
-  background: white;
-
-  .header-main-wrapper {
-    padding-bottom: 4.5rem; /* Footer height */
-  }
-
-  .main {
-    text-align: left;
-    background: white;
-    min-height: 200px;
-  }
-
-  footer {
-    height: auto;
-    background: $secondaryLight;
-    padding: $defaultSize;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
-  @include desktop {
-    .header-main-wrapper {
-      padding-bottom: 4.5rem;
-    }
-
-    footer {
-      height: 4.5rem;
-    }
-  }
-}
 </style>
