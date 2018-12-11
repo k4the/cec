@@ -2,13 +2,12 @@
   <div class="register">
     <form>
       <h1>Let's get you onto the cheapest deal</h1>
-      <div class="sub-title">
-        <h2>Your current supply</h2>
-        <p>Give us your details and we'll use a comparison to check your current tariff</p>
-      </div>
+      <SubTitle v-bind:sub-title="this.subTitles.currentSupply"/>
+      <SubTitle v-bind:sub-title="this.subTitles.energySupplier"/>
+      <SubTitle v-bind:sub-title="this.subTitles.tellUs"/>
     </form>
     <div class="sidebar">
-        <h1>How it works</h1>
+        <h2>How it works</h2>
     </div>
   </div>
 </template>
@@ -16,11 +15,16 @@
 <script>
 import './register.scss';
 import * as subTitles from './data';
-console.log(subTitles.data.currentSupply);
+import SubTitle from "@/register/SubTitle";
 export default {
   name: "Register",
+  components: {
+    SubTitle
+  },
   data() {
-    return {};
+    return {
+      subTitles: subTitles.data
+    };
   }
 };
 </script>
