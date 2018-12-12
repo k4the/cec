@@ -1,6 +1,35 @@
 .cec-select {
     text-align: left;
     position: relative;
+    margin-bottom: $defaultSize;
+
+    button {
+      background: white;
+      border: 1px solid $neutral;
+      color: $defaultFontColor;
+      height: auto;
+      text-align: left;
+      font-weight: normal;
+
+      .icon-toggle {
+        width: 38px;
+        text-align: right;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        display: inline-block;
+
+        .fa-chevron-down, .fa-chevron-up {
+          color: $neutral;
+          font-size: 12px;
+          text-align: right;
+        }
+      }
+    }
+
+    button:hover {
+      background: $neutralLight;
+    }
 
     .cec-select-list {
         position: absolute;
@@ -11,59 +40,27 @@
         background: white;
         max-height: 160px;
         overflow-y: auto;
-      }
 
-      button {
-        background: none;
-        padding: 12px 10px;
-        border: 1px solid #ccc;
-        color: #7d7a7a;
-        height: auto;
-        width: 100%;
-        text-align: left;
-        outline: none;
-        position: relative;
-      }
-
-      .fa-chevron-down, .fa-chevron-up {
-        color: #ccc;
-        font-size: 12px;
-        text-align: right;
-      }
-      
-      span {
-        display: inline-block;
-      }
-      
-      .icon,
-      .icon-toggle {
-        width: 38px;
-        text-align: right;
-        position: absolute;
-        right: 8px;
-        top: 8px;
-      }
-
-      .list-item {
-        padding: 10px;
-        border: 1px solid #ccc;
-        color: #999;
-        cursor: pointer;
-        border-bottom: none;
-        position: relative;
-        border-right: none;
-      }
-      
-      .list-item:last-child {
-        border-bottom: 1px solid #ccc;
-      }
-      
-      .list-item:hover, button:hover {
-        background: aliceblue;
-      }
-      
-      .selected .list-item:first-child {
-        border-top: 1px solid #ccc;
+        .list-item {
+          padding: $defaultSize;
+          border: 1px solid $neutral;
+          cursor: pointer;
+          border-bottom: none;
+          border-right: none;
+          position: relative;
+        }
+        
+        .list-item:last-child {
+          border-bottom: 1px solid $neutral;
+        }
+        
+        .list-item:hover, button:hover {
+          background: $terciaryLight;
+        }
+        
+        .selected .list-item:first-child {
+          border-top: 1px solid $neutral;
+        }
       }
   }
   

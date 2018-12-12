@@ -2,13 +2,13 @@
   <div class="register">
     <form @submit.prevent="addEditUser">
       <h1>Let's get you onto the cheapest deal</h1>
-      <CecSelect />
       <Message v-bind:message="this.texts.currentSupply"/>
       <label for="postcode">Postcode</label>
       <div class="form-group">
         <input type="text" name="postode" />
         <button type="button">Find Address</button>
       </div>
+      <CecSelect />
       <Message v-bind:message="this.texts.energySupplier"/>
       <Message v-bind:message="this.texts.tellUs"/>
       <Message v-bind:message="this.texts.addressFirst" v-bind:message-class="'plain'"/>

@@ -267,17 +267,17 @@ tr:nth-child(even) {
 }
 
 div::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 div::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: $neutralLight; 
 }
 
 div::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: $neutral;
 }
 
 div::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: $neutralHover;
 }

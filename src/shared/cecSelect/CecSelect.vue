@@ -1,6 +1,5 @@
 <template>
-  <div class="cec-select-container">
-    <div class="cec-select">
+  <div class="cec-select">
       <button type="button" @click="toggleSelect()">{{selected.text}}
         <span class="icon-toggle">
               <i class="link-icon fas" v-bind:class="{ 'fa-chevron-down': !selectOpen, 'fa-chevron-up': selectOpen }"></i>
@@ -11,7 +10,6 @@
           {{item.text}}
         </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -23,7 +21,7 @@ export default {
     return {
       selectOpen: false,
       selected: {
-          text: 'Please choose',
+          text: 'Please choose your address',
           id: 0
       },
       items: [
